@@ -3,20 +3,11 @@
     import Home from '@/pages/Home.svelte'
 
     // components
-    import Note from '@/components/Note.svelte'
     import Header from '@/components/Header.svelte'
 </script>
 
+<Header/>
 <main>
-    <Header/>
-    <Note
-        id={1234}
-        title={'Some note'}
-        content={'This note is about this that'}
-        tags={['Test', 'Text']}
-        date={'20220610000'}
-        isFavorite={false}
-    />
     <Home/>
 </main>
 
@@ -29,5 +20,11 @@
         margin: 0;
         height: 100%;
         background-color: #fbfbfb;
+    }
+    main {
+        padding: 2em;
+        margin: 0 auto;
+        width: 100vw;
+        box-sizing: border-box;
     }
 </style>
